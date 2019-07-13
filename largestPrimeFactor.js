@@ -18,7 +18,7 @@ exports.largestPrimeFactor = function(n) {
 
     let i = 5;
     while (i * i <= num) {
-      // check every odd number not divisible by 3
+      // check every odd number not divisible by 3 up until sqrt
       if (num % i === 0 || num % (i + 2) === 0) {
         return false;
       }
