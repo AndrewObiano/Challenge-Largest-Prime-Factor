@@ -27,9 +27,8 @@ exports.largestPrimeFactor = function(n) {
     return true;
   } // end of prime number checker
 
-  for (let i = 0; i < 7000; i++) {
+  for (let i = 0; i < Math.sqrt(n); i++) {
     // put prime numbers only in the temp array
-    // only did up to 7000 for sake of challenge
     if (isPrime(i) === true) {
       tempArr.push(i);
     }
